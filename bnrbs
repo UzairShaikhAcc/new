@@ -1,0 +1,3 @@
+- Using DELETE to archive old orders
+DELETE FROM orders
+WHERE order_date < '2022-01-01';
