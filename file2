@@ -1,0 +1,15 @@
+-- Create a table with an auto-increment ID column
+CREATE TABLE ExampleTable (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    description TEXT
+);
+
+-- Insert data into the table with the ID column omitted
+INSERT INTO ExampleTable (name, description) VALUES
+    ('Item 1', 'Description 1'),
+    ('Item 2', 'Description 2'),
+    ('Item 3', 'Description 3');
+
+-- Query the data with the generated IDs
+SELECT * FROM ExampleTable;
